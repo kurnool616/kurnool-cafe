@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet"href="style.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="#">Logo</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About Us</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Available Items
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Tea</a>
+                        <a class="dropdown-item" href="#">Coffee</a>
+                        <a class="dropdown-item" href="#">Green Tea</a>
+                        <a class="dropdown-item" href="#">Lemon Tea</a>
+                        <a class="dropdown-item" href="#">Boost</a>
+                        <a class="dropdown-item" href="#">Black Tea</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav><div id="heroCarousel" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active" style="background-image: url('web.jpg');">
+            <div class="overlay"></div>
+            <div class="carousel-caption text-center">
+                <h1 class="display-4 font-weight-bold">kurnool Cafe</h1>
+                <p class="lead">Discover amazing items  .</p>
+                <p>Join us on this journey and explore every.</p>
+                <a href="#" class="btn btn-primary">Read More</a>
+            </div>
+        </div>
+        <div class="carousel-item" style="background-image: url('IMG-20241013-WA0027.jpg');">
+            <div class="overlay"></div>
+            <div class="carousel-caption text-center">
+                <h1 class="display-4 font-weight-bold">Explore New Horizons</h1>
+                <p class="lead">Unleash your potential with our exclusive services.</p>
+                <p>Your adventure begins here, don't miss out!</p>
+                <a href="#" class="btn btn-primary">Read More</a>
+            </div>
+        </div>
+        <div class="carousel-item" style="background-image: url('IMG-20241013-WA0028.jpg');">
+            <div class="overlay"></div>
+            <div class="carousel-caption text-center">
+                <h1 class="display-4 font-weight-bold">Connect with Us</h1>
+                <p class="lead">We're here to support you every step of the way.</p>
+                <p>Reach out and let's create something great together.</p>
+                <a href="#" class="btn btn-primary">Read More</a>
+            </div>
+        </div>
+    </div>
+
+    <a class="carousel-control-prev" href="#heroCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#heroCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+
+    <ol class="carousel-indicators">
+        <li data-target="#heroCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#heroCarousel" data-slide-to="1"></li>
+        <li data-target="#heroCarousel" data-slide-to="2"></li>
+    </ol>
+</div>
+
+<div class="container about-section">
+    <div class="row">
+        <div class="col-md-6">
+            <h2>About Us</h2>
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="our-cafe-tab" data-toggle="tab" href="#our-cafe" role="tab" aria-controls="our-cafe" aria-selected="true">Our Cafe</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="our-vision-tab" data-toggle="tab" href="#our-vision" role="tab" aria-controls="our-vision" aria-selected="false">Our Vision</a>
+                </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="our-cafe" role="tabpanel" aria-labelledby="our-cafe-tab">
+                    <h3>Welcome to Our Cafe</h3>
+                    <p>Our cafe is a cozy place where friends and family come together to enjoy delicious beverages and treats.</p>
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+                <div class="tab-pane fade" id="our-vision" role="tabpanel" aria-labelledby="our-vision-tab">
+                    <h3>Our Vision</h3>
+                    <p>We strive to create a welcoming atmosphere that inspires creativity and connection through exceptional service.</p>
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <img src="C:\Users\HP\OneDrive\Pictures"alt="About Us" class="about-image" width="200px" height="200px">
+
+        </div>
+    </div>
+</div><div class="container items-section text-center">
+    <h2>Our Items</h2>
+    <p>Discover our range of delightful items designed to enhance your experience and satisfy your cravings. Explore our offerings today!</p>
+    
+    <div class="row">
+        <div class="col-md-4">
+            <div class="item-box">
+                <div class="item-icon">☕</div>
+                <h3>Item 1</h3>
+                <p>This is a delicious description of Item 1. Enjoy the rich flavors and exceptional quality.</p>
+                <a href="#" class="btn btn-primary btn-read-more">Read More</a>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="item-box">
+                <div class="item-icon">🍵</div>
+                <h3>Item 2</h3>
+                <p>This is a refreshing description of Item 2. Perfect for a calming experience anytime.</p>
+                <a href="#" class="btn btn-primary btn-read-more">Read More</a>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="item-box">
+                <div class="item-icon">🍋</div>
+                <h3>Item 3</h3>
+                <p>This is a zesty description of Item 3. A great choice for a refreshing twist.</p>
+                <a href="#" class="btn btn-primary btn-read-more">Read More</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row mt-4">
+        <div class="col-md-4">
+            <div class="item-box">
+                <div class="item-icon">☕</div>
+                <h3>Item 4</h3>
+                <p>This is a bold description of Item 4. Experience the robust flavor in every sip.</p>
+                <a href="#" class="btn btn-primary btn-read-more">Read More</a>
+            </div>
+        </div>
+        <div class="col-md-4">
+           <div class="item-box">
+                <div class="item-icon">🥤</div>
+                <h3>Item 5</h3>
+                <p>This is a sweet description of Item 5. Indulge in this delightful treat.</p>
+                <a href="#" class="btn btn-primary btn-read-more">Read More</a>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="item-box">
+                <div class="item-icon">🫖</div>
+                <h3>Item 6</h3>
+                <p>This is a soothing description of Item 6. Perfect for relaxation and enjoyment.</p>
+                <a href="#" class="btn btn-primary btn-read-more">Read More</a>
+            </div>
+        </div>
+        <div class ="col-md-4">
+            <div class ="item box">
+                <div class ="item icon">☕</div>
+                <h3>item 7</h3>
+                <p> this ia sweet despription for item 7.perfect stress releif</p>
+                <a href="#" class ="btn btn-primary btn-read-more">Read More</a>
+            </div>
+        </div>
+    </div>
+
+</div><div class="container contact-section">
+    <h2 class="text-center mb-4">Contact Us</h2>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="contact-form">
+                <h4>Get in Touch</h4>
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea class="form-control" id="message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <h4>Our Location</h4>
+            <iframe class="map" src="https://www.google.com/maps/place/Kurnool+Cafe/@15.8063947,78.0335754,17z/data=!4m7!3m6!1s0x3bb5dda0a8be5015:0x99c71d2ce399fc5e!4b1!8m2!3d15.8063896!4d78.0384463!16s%2Fg%2F11qmly9n6h?authuser=1&entry=ttu&g_ep=EgoyMDI0MTAwOS4wIKXMDSoASAFQAw%3D%3D " allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+</div>
+
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+
+
+
+
+            <div class="col-md-4">
+                <div class="item-box">
+                <div class="item-icon">🥤</div>
+
+                <h5>About Us</h5>
+                <p>Founder : MUKKAMALLA MURALI MOHAN
+                   Address :SAI VASANTH COMPLEX,BIRLA COMPUND,KURNOOL,ANDHRA PRADESH.
+                  PIN CODE : 518002.
+
+                </p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <h5>Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Our Items</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h5>Contact Information</h5>
+                <p>Email:srkservice19@gmail.com</p>
+                <p>Phone:+91 9866676161</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-4">
+            <p>&copy; 2024 Your Company Name. All Rights Reserved.</p>
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+<script src ="script.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
